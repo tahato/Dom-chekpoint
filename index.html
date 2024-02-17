@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charlotte</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="titre">
+        <h1>CHARLOTTE</h1>
+        <h4>RESTAURANT & LOUNGE</h4>
+      </div>
+      <nav>
+        <div class="liens">
+          <a href="#timing">HOURS & LOCATION</a>
+          <a href="">MENUS</a>
+          <a href="">ABOUT</a>
+          <a href="">GIFT CARDS</a>
+        </div>
+        <div class="btn">
+          <button id="bt"><a href="shop.html" target="_blank">ORDER ONLINE</a></button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- the first section images d'accueil -->
+    <section class="firstSect">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assest/1.webp" alt="" class="Acimg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assest/2.jpg" alt="" class="Acimg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assest/3.jpg" alt="" class="Acimg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assest/4.jpeg" alt="" class="Acimg" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- sction 2 -->
+    <section class="Section-about">
+      <div class="left-about">
+        <img src="./assest/charlotte037.webp" alt="" class="main-img" />
+      </div>
+      <div class="right-about">
+        <h1>ABOUT</h1>
+        <h3>CHARLOTTE RESTAURANT & LOUNGE</h3>
+        <p>
+          Where Pacific Northwest cuisine takes a contemporary twist. Situated
+          on the 16th floor, our restaurant & lounge offers sweeping views of
+          Elliott Bay. Our imaginative dishes are crafted with fresh and local
+          ingredients, paired perfectly with our carefully curated,
+          seasonally-changing cocktails.
+        </p>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="Section3">
+      <div class="left3">
+        <h1>EXQUISITE CUISINE</h1>
+        <h3>CONTEMPORARY PACIFIC NORTHWEST</h3>
+        <p>
+          Charlotte Restaurant & Lounge features a contemporary approach to
+          Pacific Northwest cuisine, showcasing elevated dishes using fresh,
+          local ingredients served in an approachable way. Menu highlights
+          include PNW Oysters, Stone Oven Octopus, Roasted Black Cod, and the
+          Filet Mignon. Highlighting seasonal flavors and a classic yet
+          contemporary style, the dessert menu offers standout options from
+          mouthwatering Soufflé to our 'Matchamisu'.
+        </p>
+      </div>
+      <div class="right3">
+        <img src="./assest/charlotte131_edited.webp" alt="" class="main-img" />
+      </div>
+    </section>
+
+    <!-- section 4 -->
+    <section class="Section4">
+      <div class="left-about">
+        <img src="./assest/charlotte065.webp" alt="" class="main-img3" />
+      </div>
+      <div class="right-about">
+        <h1>DELECTABLE DESSERTS</h1>
+        <h3>ARTISTIC EDIBLE CREATIONS</h3>
+        <p>
+          Executive Pastry Chef Artis Kalsons demonstrates exceptional technique
+          combining his passion for seasonal flavors with a contemporary
+          approach to the classics. Chef Artis Kalsons finds inspiration from
+          the range of flavors that are much loved by today’s guests. The
+          dessert menu highlights include classics such as the White Chocolate
+          Chip Soufflé, as well as seasonal specials.
+        </p>
+      </div>
+    </section>
+    <section class="contact-us">
+    
+    </section>
+
+    <div class="timing" id="timing">
+      <div class="div1">
+        <div>
+          <div></div>
+          <h1>Location</h1>
+        </div>
+        <div>
+          <h4>
+            LOTTE HOTEL SEATTLE <br /><br />
+
+            809 5th Ave, Seattle WA 98104 <br /><br />
+
+            16th floor <br /><br /><br />
+
+            ​ charlotte@lottehotelseattle.com <br /><br />
+            206.800.8117 <br /><br /><br />
+
+            ​ *Valet parking is available for $20 for up to 3 hours.
+          </h4>
+        </div>
+      </div>
+
+      <div class="div2">
+        <div>
+          <h1>Hours</h1>
+        </div>
+        <div>
+          <h4>Breakfast | Mon - Fri</h4>
+          <h5>7:00 am to 11:00 am</h5>
+          <h4>Brunch | Sat - Sun</h4>
+          <h5>7:00 am to 02:00 pm</h5>
+          <h4>Lunch | Mon - Fri</h4>
+          <h5>11:00 am to 02:00 pm</h5>
+          <h4>Dinner | Tue - Sat</h4>
+          <h5>5:00 pm to 10:00 pm</h5>
+          <h4>Lounge | Daily</h4>
+          <h5>3:00 pm to 11:00 pm</h5>
+          <h4>Happy Hour | Daily</h4>
+          <h5>3:00 pm to 6:00 pm</h5>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+</html>
